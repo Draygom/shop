@@ -61,7 +61,7 @@ class _ProductFormPageState extends State<ProductFormPage> {
   }
 
   bool isValidImageUrl(String url) {
-    bool isValidUrl = Uri.parse(url).hasAbsolutePath ?? false;
+    bool isValidUrl = Uri.parse(url).hasAbsolutePath;
     bool endsWithFile = url.toLowerCase().endsWith('.png') ||
         url.toLowerCase().endsWith('.jpg') ||
         url.toLowerCase().endsWith('.jpeg');
